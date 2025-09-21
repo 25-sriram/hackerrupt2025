@@ -64,24 +64,35 @@ const NavLink = ({ children, onClick, isActive }) => (
 )
 
 const HomeSection = () => (
-  <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+  <div className="min-h-screen flex flex-col items-center justify-center text-center px-3 sm:px-4 py-10">
     <Mascot />
-    <h1 className="font-pixel text-4xl md:text-7xl mb-2 animate-text-glitch tracking-widest">&lt;Hackerrupt'25&gt;</h1>
-    <p className="text-lg md:text-xl text-gray-300 mb-2">Turn Bugs into Brilliance</p>
-    <p className="text-purple-400 font-bold mb-8">13th-14th Oct 2024</p>
 
-      <div className="flex flex-col md:flex-row gap-6">
-        <a
-          href="/comingsoon.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hack-button bg-gradient-to-r from-purple-600 to-indigo-600"
-        >
-          <span>Register Now</span>
-        </a>
-      </div>
+    {/* Title */}
+    <h1 className="font-pixel text-2xl xs:text-3xl sm:text-4xl md:text-7xl mb-3 animate-text-glitch leading-snug break-words">
+      &lt;Hackerrupt'25&gt;
+    </h1>
+
+    {/* Subtitle */}
+    <p className="text-sm xs:text-base sm:text-lg md:text-xl text-gray-300 mb-2">
+      Turn Bugs into Brilliance
+    </p>
+    <p className="text-purple-400 font-bold mb-6 sm:mb-8 text-sm sm:text-base">
+      13th-14th Oct 2024
+    </p>
+
+    {/* Button */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+      <a
+        href="/comingsoon.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hack-button w-full sm:w-auto px-6 py-3 rounded-xl text-base sm:text-lg font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md hover:scale-105 transition-transform duration-300"
+      >
+        Register Now
+      </a>
+    </div>
   </div>
-)
+);
 
 const PrizePoolSection = () => (
   <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
@@ -92,7 +103,7 @@ const PrizePoolSection = () => (
 
       <p className="text-lg text-gray-300 mb-12">
         Hackerrupt’25 offers an exciting prize pool worth over{" "}
-        <span className="text-yellow-400 font-bold">₹30,000</span> along with
+        <span className="text-yellow-400 font-bold">Yet to be released</span> along with
         certificates, and exclusive opportunities.
       </p>
 
@@ -101,19 +112,19 @@ const PrizePoolSection = () => (
         <div className="bg-black/50 border border-green-500 rounded-xl p-6 hover:scale-105 transition-transform duration-300">
           <div className="text-5xl mb-4">🥇</div>
           <h3 className="text-xl font-bold text-green-300 mb-2">1st Place</h3>
-          <p className="text-gray-300">₹15,000 + Certificate</p>
+          <p className="text-gray-300">Yet to be released</p>
         </div>
 
         <div className="bg-black/50 border border-purple-500 rounded-xl p-6 hover:scale-105 transition-transform duration-300">
           <div className="text-5xl mb-4">🥈</div>
           <h3 className="text-xl font-bold text-purple-300 mb-2">2nd Place</h3>
-          <p className="text-gray-300">₹10,000 + Certificate</p>
+          <p className="text-gray-300">Yet to be released</p>
         </div>
 
         <div className="bg-black/50 border border-blue-500 rounded-xl p-6 hover:scale-105 transition-transform duration-300">
           <div className="text-5xl mb-4">🥉</div>
           <h3 className="text-xl font-bold text-blue-300 mb-2">3rd Place</h3>
-          <p className="text-gray-300">₹5,000 + Certificate</p>
+          <p className="text-gray-300">Yet to be released</p>
         </div>
       </div>
     </div>
