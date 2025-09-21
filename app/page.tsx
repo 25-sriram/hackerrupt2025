@@ -888,7 +888,7 @@ const GallerySection = () => {
     "/gallery1.jpg",
     "/gallery2.jpg",
     "/gallery3.jpg",
-    "/gallery4.jpg",
+    "/gallery4.JPG",
     "/gallery5.jpg",
   ];
 
